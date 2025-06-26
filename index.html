@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afro</title>
+    <title>Afrovibez Music Explore</title>
+    <!-- got these fonts from google fonts, they look cool -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="logo">Afrovibezz</h1>  
+        <p class="tagline">Explore • Discover • Experience</p>
+    </header>
+
+    <!-- main search area thing -->
+    <section class="search-section">
+        <div class="glass-container">
+            <input type="text" class="search-box" placeholder="Search for music, artists, or genres..." id="searchInput">
+        </div>
+        <select class="filter-dropdown" id="countryFilter">
+            <option value="">All Countries</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Kenya">Kenya</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Tanzania">Tanzania</option>
+            <!-- TODO: add more countries later -->
+        </select>
+
+        <button class="search-btn" id="searchBtn">SEARCH</button>
+    </section>
+
+    <main class="artist-container">
+        <div class="artist-grid" id="artistGrid">
+            <!--Artist cards will be generated here-->
+        </div>
+
+        <!--loading state-->
+        <div class="loading hidden" id="loading">
+            <div class="spinner"></div>
+        </div>
+    </main>
+
+    <!--Modal-->
+    <div class="modal" id="artistModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalBody">
+                <!--MOdal content will be dynamically generated-->
+
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./index.js"></script>
 </html>

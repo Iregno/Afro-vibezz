@@ -26,7 +26,7 @@ body {
     /* Background with overlay - took forever to get this right */
     background-image: 
         linear-gradient(rgba(10, 10, 15, 0.7), rgba(26, 11, 46, 0.85)), 
-        url('https://i.pinimg.com/736x/76/f1/e8/76f1e830734b4dbaa0930232a7d9e28a.jpg'); /* need to add actual gif later */
+        url(''); /* need to add actual gif later */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

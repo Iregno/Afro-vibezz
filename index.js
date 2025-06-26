@@ -1,7 +1,7 @@
 // Main app class - this handles everything 
 // Afrovibez application class
 
-const baseUrl = ''; // JSON server URL
+const baseUrl = 'https://json-server-2-cp63.onrender.com'; // JSON server URL
 
 class AfrovibezApp {
     constructor() {
@@ -199,7 +199,6 @@ class AfrovibezApp {
             });
         });
     }
-
     showModal(artist) {
         const modal = document.getElementById('artistModal');
         const modalBody = document.getElementById('modalBody');
@@ -225,19 +224,16 @@ class AfrovibezApp {
         modal.classList.add('show');
         document.body.style.overflow = 'hidden';
     }
-
     hideModal() {
         document.getElementById('artistModal').classList.remove('show');
         document.body.style.overflow = 'auto';
     }
-
     showSpinner(show) {
         const loading = document.getElementById('loading');
         const grid = document.getElementById('artistGrid');
         loading.classList.toggle('hidden', !show);
         grid.style.opacity = show ? '0.4' : '1';
     }
-
     showMessage(msg, type = 'info') {
         // Remove existing notifications
         const existing = document.querySelectorAll('.notification');
@@ -253,7 +249,6 @@ class AfrovibezApp {
         setTimeout(() => notification.remove(), 3300);
     }
 }
-
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new AfrovibezApp();

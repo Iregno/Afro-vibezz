@@ -1,12 +1,12 @@
 // Main app class - this handles everything 
 // Afrovibez application class
 
-const baseUrl = 'https://json-server-2-cp63.onrender.com'; // JSON server URL
+const baseUrl = 'https://json-server-1-j850.onrender.com/'; // JSON server URL
 
 class AfrovibezApp {
     constructor() {
         // URL for the JSON server
-        this.baseUrl = 'http://localhost:3000/artists';
+        this.baseUrl = 'https://json-server-1-j850.onrender.com/';
         this.artists = [];   // artist data
         this.filteredArtists = [];
         this.globalVar = 'I might use this'; // not sure if needed

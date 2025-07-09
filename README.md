@@ -55,7 +55,7 @@ You'll need to have Node.js installed on your computer. If you don't have it, yo
 
 1. **Download the project:**
    ```bash
-   git clone https://github.com/yourusername/Afro-vibez.git
+   git clone https://github.com/Iregno/Afro-vibez.git
    cd Afro-vibez
    ```
 
